@@ -1,0 +1,682 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    background: #f3f3f3;
+    color: #000;
+    overflow-x: hidden;
+  }
+  
+  /* =========================
+     HEADER / NAV
+  ========================= */
+  
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-image: linear-gradient (64, 64, 64, 0.6) rgba(64, 64, 64, 0.6);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+  }
+  
+  .logo img {
+    height: 16px;
+    opacity: 0.8;;
+  }
+  
+  .main-nav a {
+    margin-left: 32px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0.12em;
+    color: #9c9c9c;
+    opacity: 0.8;
+  }
+  
+  .main-nav a:hover {
+    opacity: 1;
+    color: #000;
+  }
+  
+  
+  /* =========================
+   CHECK SECTIONS
+========================= */
+
+.page-content {
+    padding-top: 72px; /* compenso header fixed */
+  }
+  
+  .check-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Colori diversi */
+  
+
+  /* =========================
+   HERO SECTION 1
+========================= */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("assets/modella%20casco.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  /* Contenuto testo */
+  .hero-content {
+    position: absolute;
+    right: 2.5%;
+    z-index: 2;
+    max-width: 800px;
+  }
+  
+  /* Titoli */
+  .hero-content h1 {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200; /* Geist Light */
+    font-size: 65px;
+    letter-spacing: 0.12em;
+    margin-bottom: 222px;
+    color: #4a4a4a;
+    text-align: right;
+  }
+  
+  .hero-content h2 {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200;
+    font-size: 65px;
+    letter-spacing: 0.12em;
+    margin-bottom: 100px;
+    color: #4a4a4a;
+    text-align: right;
+  }
+  
+  /* Bottone */
+  .hero-btn {
+    position: absolute;
+    top: 100%;
+    right: 2.5%;
+  
+    padding: 10px 32px;
+    border-radius: 999px;
+  
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  
+    color: #9c9c9c;
+  
+    background: rgba(0, 0, 0, 0.13);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+  
+    border: 0.8px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 10px 30px rgba(105, 105, 105, 0.5);
+  
+    transition: all 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+     background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+  }
+  .s1 {
+    background-image: url("assets/modella.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+  .s2 { background: #ddffdd; }
+  .s3 { background: #ddddff; }
+  .s4 { background: #fff4cc; }
+  .s5 { background: #e6ddff; }
+  .s6 { background: #ddf4ff; }
+  
+
+  /* =========================
+   DATA SECTION (SECTION 2)
+========================= */
+
+.data-section {
+    position: relative;
+    min-height: 100vh;
+    background: #f3f3f3;
+  }
+  
+  /* Singolo dato */
+  .data-item {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  
+    font-family: "Geist Sans", system-ui, sans-serif;
+    letter-spacing: 0.02em;
+    color: #3f3f3f;
+  }
+  
+  /* Numero / percentuale */
+  .data-number {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  
+  /* Testo descrittivo */
+  .data-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+  
+  /* Posizionamento (reference-based) */
+  .top-right {
+    top: 120px;
+    right: 165px;
+  }
+  
+  .mid-left {
+    top: 40%;
+    left: 165px;
+  }
+  
+  .bottom-right {
+    bottom: 290px;
+    right: 165px;
+  }
+  
+  .bottom-left {
+    bottom: 160px;
+    left: 165px;
+  }
+  
+
+  /* =========================
+   ARCHITECTURE SECTION (3–4)
+========================= */
+
+.architecture-section {
+    position: relative;
+    height: 200vh; /* unisce section 3 + 4 */
+    background-image: url("assets/modello_casco.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .architecture-blur {
+    position: relative;
+  
+    height: 420px; /* il tuo valore resta */
+    display: flex;
+    align-items: center;     /* centro verticale */
+    justify-content: flex-start; /* NON centro orizzontale */
+  
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  .architecture-content {
+    margin-left: 165px;   /* 🔥 QUESTO È IL VALORE CHE VOLEVI */
+    max-width: 2000px;
+    color: #4a4a4a;
+  }
+  
+  
+  /* Titolo */
+  .architecture-content h2 {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 300; /* Geist Regular */
+    font-size: 50px;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    color: #3f3f3f;
+  }
+  
+  /* Testo */
+  .architecture-content p {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200; /* Geist Light */
+    font-size: 32px;
+    line-height: 1.44;
+    letter-spacing: 0.02em;
+    color: #3f3f3f;
+  }
+  
+  .architecture-content strong {
+    font-weight: 400;
+  }
+  
+  .mechanism-blur {
+    position: relative;
+    top: 30%;
+  
+    /* ❌ height: 420px;  ← ELIMINATA */
+    padding: 72px 0; /* spazio sopra e sotto COSTANTE */
+  
+    display: flex;
+    justify-content: flex-start;
+  
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  .mechanism-blur {
+    transition: padding 0.3s ease;
+  }
+  
+  
+
+  .mechanism-content {
+    margin-left: 165px;   /* 🔥 QUESTO È IL VALORE CHE VOLEVI */
+    max-width: 2000px;
+    color: #4a4a4a;
+  }
+  
+  
+  /* Titolo */
+  .mechanism-content h2 {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 300; /* Geist Regular */
+    font-size: 50px;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    color: #3f3f3f;
+  }
+  
+  /* Testo */
+  .mechanism-content p {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200; /* Geist Light */
+    font-size: 32px;
+    line-height: 1.44;
+    letter-spacing: 0.02em;
+    color: #3f3f3f;
+  }
+  
+  .mechanism-content strong {
+    font-weight: 400;
+  }
+  
+  
+  .accordion {
+    margin-top: 48px;
+    max-width: 900px;
+  }
+  
+  .accordion-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 24px 0;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    gap: 16px;              /* 👈 distanza testo–freccia */
+  
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    color: #3f3f3f;
+  }
+  
+  
+  .accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  
+  .accordion-panel p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #4a4a4a;
+  }
+  
+  .arrow {
+    width: 14px;           /* 👈 larghezza */
+    height: 14px;
+  
+    border-right: 1.5px solid #3f3f3f;
+    border-bottom: 1.5px solid #3f3f3f;
+  
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  
+  .accordion-item.open .arrow {
+    transform: rotate(-135deg);
+  }
+
+  /* =========================
+   SECTION 5 – WHITE PAPER
+========================= */
+
+.whitepaper-section {
+    position: relative;
+    min-height: 60vh;
+    background: #f3f3f3;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    overflow: hidden;
+  }
+  
+  /* immagine casco */
+  .whitepaper-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    width: 80%;
+    height: 80%;
+  
+    background-image: url("assets/casco_data.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  
+    pointer-events: none;
+  }
+  
+  /* gradiente di transizione verso section 6 */
+  .whitepaper-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 280px;
+  
+    background: linear-gradient(
+      to bottom,
+      rgba(243,243,243,0) 0%,
+      #f3f3f3 100%
+    );
+  }
+  
+  /* contenitore bottone */
+  .whitepaper-inner {
+    position: relative;
+    z-index: 2;
+    margin-top: 350px;   /* ⬇️ abbassa il bottone */
+  }
+  
+  
+  /* bottone glass */
+  .whitepaper-btn {
+    padding: 14px 40px;
+    border-radius: 999px;
+  
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  
+    color: #9c9c9c;
+  
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  
+    transition: all 0.3s ease;
+  }
+  
+  .whitepaper-btn:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: #3f3f3f;
+    transform: translateY(-2px);
+  }
+  
+  
+  .section-6 {
+    background: #f3f3f3;
+    padding: 140px 165px; /* spazio sopra/sotto e margine laterale */
+  }
+  
+  .section-6-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 120px; /* distanza verticale tra testo e fonti */
+  }
+  
+
+  .section-6 h2 {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 0.02em;
+    margin-bottom: 56px;
+    color: #3f3f3f;
+  }
+
+  .section-6-text p {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200; /* Light */
+    font-size: 32px;
+    line-height: 1.4; /* 140% */
+    letter-spacing: 0.02em;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+  }
+  
+  .section-6-text strong {
+    font-weight: 400;
+  }
+
+  .section-6-sources {
+    display: grid;
+    grid-template-columns: 320px 1fr; /* titolo | testo */
+    gap: 80px;
+  
+    margin-top: 120px;
+  }
+  
+  .section-6-sources h3 {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #3f3f3f;
+  }
+
+  .sources-list p {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200; /* Geist Light */
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: #6a6a6a;
+  
+    margin-bottom: 32px;
+  }
+
+  .sources-list a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  
+  .section-6-sources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section-6-sources li {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: #6a6a6a;
+    margin-bottom: 24px;
+  }
+  
+    /* ======================
+   FOOTER
+====================== */
+.footer {
+
+    padding: 140px 120px 60px;
+    position: relative;
+  }
+  .footer-top {
+    margin-bottom: 100px;
+  }
+  
+  .footer-logo {
+    width: 140px;
+    opacity: 0.6;
+  }
+  .footer-middle {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 100px;
+    margin-bottom: 120px;
+  }
+  .footer-col p {
+    margin: 0;
+  }
+  
+  .footer-col p a {
+    font-family: 'Geist', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    color: #8a8a8a;
+    display: inline-block;
+    padding: 6px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-col p a:hover {
+    color: #000;
+    transform: translateX(4px);
+  }
+  .footer-col-primary a {
+    font-size: 22px;
+    letter-spacing: 0.18em;
+    color: #4a4a4a;
+  }
+  .footer-col-nav a {
+    font-size: 16px;
+    letter-spacing: 0.16em;
+  }
+  .footer-col-contact p {
+    font-family: 'Geist', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+    color: #9a9a9a;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Geist', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.45;
+  }
+  
+  
+  /* ======================
+     SECTION-SPECIFIC
+  ====================== */
+  
+  .section-4 {
+    height: 850px;
+  
+    background-image: url("assets/cascohome.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .section-4::before,
+  .section-4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px; /* intensità sfumatura */
+    pointer-events: none;
+    z-index: 2;
+  }
+  .section-4::before {
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      #f3f3f3 0%,
+      rgba(243, 243, 243, 0) 100%
+    );
+  }
+  .section-4::after {
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      #f3f3f3 0%,
+      rgba(243, 243, 243, 0) 100%
+    );
+  }
+  
+  
+  

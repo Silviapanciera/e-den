@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Geist Sans", system-ui, sans-serif;
+    background: #f3f3f3;
+    color: #3f3f3f;
+  }
+  
+  /* LAYOUT */
+  .beta-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 165px;
+  }
+  
+  /* HERO */
+  .beta-hero h1 {
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+  
+  .beta-hero p {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    max-width: 700px;
+  }
+  
+  /* FORM */
+  .beta-form {
+    margin-top: 100px;
+    max-width: 600px;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  
+  .field label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+  
+  .field input,
+  .field textarea,
+  .field select {
+    font-family: "Geist Sans", system-ui, sans-serif;
+    font-size: 18px;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    background: transparent;
+    outline: none;
+    color: #3f3f3f;
+  }
+  
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: rgba(0,0,0,0.35);
+  }
+  
+  /* GLASS BUTTON */
+  .glass-button {
+    margin-top: 40px;
+    padding: 14px 32px;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3f3f3f;
+  
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .glass-button:hover {
+    background: rgba(255,255,255,0.75);
+  }
+
+  
+  /* HEADER LOGO BACK */
+.beta-header {
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    z-index: 100;
+  }
+  
+  .beta-logo img {
+    height: 18px;        /* coerente con header principale */
+    width: auto;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+  }
+  
+  .beta-logo:hover img {
+    opacity: 1;
+  }
+  
